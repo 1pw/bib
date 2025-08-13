@@ -49,7 +49,7 @@
     <header class="app">
       <div>
         <h1>Library Browser — A–Z</h1>
-        <div class="muted">Search by author, title, and language. Exports respect your filters.</div>
+        <div class="muted">Search by author, title, and original language and genre.  Exports respect your filters.</div>
       </div>
       <div class="toggle" aria-label="Color theme">
         <button id="light">Light</button>
@@ -65,11 +65,13 @@
           <input id="author" type="text" placeholder="e.g., Duras or Marguerite Duras" />
         </div>
         <div class="field">
-          <label for="title">Title (original or translated)</label>
+          <label for="title">Title</label>
           <input id="title" type="text" placeholder="e.g., La Peste or The Plague" />
-        </div>
+	</div>
+      </div>
+      <div class="grid">	
         <div class="field">
-          <label for="language">Language</label>
+          <label for="language">Language of the original</label>
           <select id="language">
             <option value="">All languages</option>
           </select>
